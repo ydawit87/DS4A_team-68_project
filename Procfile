@@ -1,1 +1,1 @@
-web: gunicorn covid_tweet_main:app --log-file -
+web: sh setup.sh && streamlit run covid_tweet_main.py
