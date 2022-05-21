@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-
+"""
+The script contains the main page of the streamlit application and creates a directory of tabs which provide a certain function. There are 5 tabs other\
+than the home page; the components/tabs are Dataframe, Sentiment, WordCloud, Heatmap, and Prediction
+"""
 #https://www.hackerearth.com/practice/
 #https://amueller.github.io/word_cloud/auto_examples/colored_by_group.html
 
@@ -7,7 +10,7 @@ import yoseph
 import funke
 import arianna
 import suzan_v2
-import jasiya
+import yoseph2
 import home_page
 import streamlit as st
 
@@ -31,7 +34,7 @@ footer:before{
 """
 
 
-pages = {'About':home_page, 'DataFrame':suzan_v2, 'Sentiment':jasiya, 'WordCloud':funke, 'Heatmap':arianna, 'Prediction':yoseph}
+pages = {'About':home_page, 'DataFrame':suzan_v2, 'Sentiment':yoseph2, 'WordCloud':funke, 'Heatmap':arianna, 'Prediction':yoseph}
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
